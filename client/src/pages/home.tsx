@@ -82,42 +82,40 @@ export default function Home() {
   const packages = [
     {
       name: "Paket Basic",
-      price: "Rp 150.000",
+      price: "Rp 45.000",
       duration: "45 menit",
       features: [
         "Baby Massage",
         "1 Sesi Perawatan",
         "Produk Baby Oil",
         "Konsultasi Dasar",
+        "Foto Dokumentasi"
       ],
       popular: false,
     },
     {
       name: "Paket Premium",
-      price: "Rp 250.000",
+      price: "Rp 150.000",
       duration: "60 menit",
       features: [
         "Baby Spa + Massage",
         "1 Sesi Perawatan",
         "Produk Premium",
         "BAPIL Ringan",
-        "Konsultasi Lengkap",
         "Foto Dokumentasi",
       ],
       popular: true,
     },
     {
       name: "Paket Therapy",
-      price: "Rp 350.000",
+      price: "Rp 250.000",
       duration: "90 menit",
       features: [
         "Full Baby Spa Treatment",
         "Baby Massage Lengkap",
         "Baby Therapy Khusus",
         "BAPIL Program",
-        "Produk Premium Set",
         "Konsultasi Ahli",
-        "Video Tutorial",
       ],
       popular: false,
     },
@@ -125,14 +123,14 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Ibu Sarah",
-      role: "Mama dari Baby Kenzie",
-      content: "Kenzie jadi lebih tenang tidurnya sejak rutin baby spa dengan KANARA. Terapisnya sangat gentle dan profesional!",
+      name: "Ibu Mala",
+      role: "Mama dari Baby Kina",
+      content: "Kina jadi lebih tenang tidurnya sejak rutin baby spa dengan KANARA. Terapisnya sangat profesional!",
       rating: 5,
       image: happyMother,
     },
     {
-      name: "Ibu Diana",
+      name: "Ibu Monica",
       role: "Mama dari Baby Alisha",
       content: "Pelayanan di rumah sangat membantu! Alisha jadi lebih aktif dan ceria setelah rutin massage. Highly recommended!",
       rating: 5,
@@ -186,7 +184,7 @@ export default function Home() {
             <Button 
               size="lg" 
               className="rounded-full"
-              onClick={() => window.open('https://wa.me/628123456789?text=Halo%20KANARA,%20saya%20ingin%20booking%20baby%20spa', '_blank')}
+              onClick={() => window.open('https://wa.me/6282140496166?text=Halo%20KANARA,%20saya%20ingin%20booking%20baby%20spa', '_blank')}
               data-testid="button-booking-hero"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
@@ -362,7 +360,7 @@ export default function Home() {
                   <Button 
                     className="w-full mt-6 rounded-full" 
                     variant={pkg.popular ? "default" : "outline"}
-                    onClick={() => window.open(`https://wa.me/628123456789?text=Halo%20KANARA,%20saya%20ingin%20booking%20${pkg.name}`, '_blank')}
+                    onClick={() => window.open(`https://wa.me/6282140496166?text=Halo%20KANARA,%20saya%20ingin%20booking%20${pkg.name}`, '_blank')}
                     data-testid={`button-package-${index}`}
                   >
                     Pilih Paket Ini
@@ -372,6 +370,15 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <div className="mt-12 flex justify-center w-full">
+        <a 
+          href="/price-list" 
+          className="w-full max-w-md px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-bold rounded-full shadow-md transition-all text-center flex items-center justify-center"
+        >
+          Lihat Price List
+        </a>
+      </div>
       </section>
 
       <section id="testimonials" className="py-20 px-6 bg-accent/30">
@@ -495,7 +502,7 @@ export default function Home() {
             <Button 
               size="lg" 
               className="rounded-full"
-              onClick={() => window.open('https://wa.me/628123456789?text=Halo%20KANARA,%20saya%20ingin%20konsultasi', '_blank')}
+              onClick={() => window.open('https://wa.me/6282140496166?text=Halo%20KANARA,%20saya%20ingin%20konsultasi', '_blank')}
               data-testid="button-booking-main"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
@@ -518,7 +525,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2 text-[#8A6E63]" data-testid="text-contact-area-title">Area Layanan</h3>
                     <p className="text-muted-foreground" data-testid="text-contact-area-description">
-                      Jakarta Selatan, Jakarta Pusat, Jakarta Barat, Tangerang Selatan, dan sekitarnya
+                      Sonoageng, Warujayeng dan sekitarnya
                     </p>
                   </div>
                 </div>
@@ -537,8 +544,8 @@ export default function Home() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2 text-[#8A6E63]" data-testid="text-contact-info-title">Kontak</h3>
                     <p className="text-muted-foreground" data-testid="text-contact-info-description">
-                      WhatsApp: +62 812-3456-789<br />
-                      Email: hello@kanara.id
+                      WhatsApp: +62 821-4049-6166<br />
+                      Email: kanara@gmial.com
                     </p>
                   </div>
                 </div>
@@ -590,14 +597,14 @@ export default function Home() {
             <div className="md:col-span-2">
               <h3 className="font-serif text-2xl font-bold mb-4 text-[#8A6E63]">KANARA</h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Baby Spa Home Care premium yang mengutamakan kenyamanan, keamanan, dan kebahagiaan buah hati Anda.
+                Baby Spa Home Care premium yang hadir untuk memberikan sentuhan terbaik bagi buah hati Anda. Kami percaya setiap bayi berhak merasakan pengalaman relaksasi yang lembut, aman, dan penuh perhatian. Dengan terapis berpengalaman, produk yang aman, serta pelayanan yang hangat, KANARA berkomitmen menghadirkan kenyamanan dan kebahagiaan di setiap sesi perawatan di rumah Anda.
               </p>
               <div className="flex gap-3">
                 <Button 
                   size="icon" 
                   variant="outline" 
                   className="rounded-full"
-                  onClick={() => window.open('https://instagram.com/kanara.babyspa', '_blank')}
+                  onClick={() => window.open('https://instagram.com/kanara.home.spa', '_blank')}
                   data-testid="button-instagram"
                 >
                   <Instagram className="h-5 w-5" />
@@ -606,7 +613,7 @@ export default function Home() {
                   size="icon" 
                   variant="outline" 
                   className="rounded-full"
-                  onClick={() => window.open('https://wa.me/628123456789', '_blank')}
+                  onClick={() => window.open('https://wa.me/6282140496166', '_blank')}
                   data-testid="button-whatsapp-footer"
                 >
                   <MessageCircle className="h-5 w-5" />
@@ -615,7 +622,7 @@ export default function Home() {
                   size="icon" 
                   variant="outline" 
                   className="rounded-full"
-                  onClick={() => window.location.href = 'mailto:hello@kanara.id'}
+                  onClick={() => window.location.href = 'mailto:kanara@gmail.com'}
                   data-testid="button-email"
                 >
                   <Mail className="h-5 w-5" />
@@ -652,17 +659,17 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4 text-[#8A6E63]">Kontak</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>+62 812-3456-789</li>
-                <li>hello@kanara.id</li>
+                <li>+62 821-4049-6166</li>
+                <li>kanara@gmail.com</li>
                 <li className="pt-2 text-sm">
-                  Jakarta & Tangerang Selatan
+                  Sonoageng & Sekitarnya
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-border pt-6 text-center text-muted-foreground text-sm">
-            <p>&copy; 2025 KANARA Baby Spa Home Care. All rights reserved.</p>
+            <p>&copy; 2025 KANARA Home Care. All rights reserved.</p>
           </div>
         </div>
       </footer>
