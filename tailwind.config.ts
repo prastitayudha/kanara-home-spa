@@ -83,9 +83,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
+        sans: ["Poppins", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
+        decorative: ["Quicksand", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
