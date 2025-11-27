@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -379,6 +380,64 @@ export default function Home() {
           Lihat Price List
         </a>
       </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          
+          {/* Judul Section */}
+          <div className="text-center mb-10">
+            <span className="bg-pink-100 text-pink-600 px-4 py-1 rounded-full text-sm font-bold">
+              Segera Hadir
+            </span>
+            <h2 className="text-3xl font-bold text-gray-800 mt-4">
+              Kanara Baby Shop
+            </h2>
+            <p className="text-gray-500 mt-2">
+              Produk perawatan terbaik pilihan bidan untuk buah hati Anda
+            </p>
+          </div>
+
+          {/* Grid Produk (3 Contoh) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Produk 1 */}
+            <div className="border border-pink-100 rounded-2xl p-4 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-gray-100 h-48 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+                {/* Ganti src ini dengan foto asli nanti */}
+                <img src="/produk/minyak2.jpg" alt="Produk 1" className="w-full h-full object-cover rounded-xl"/>
+              </div>
+              <h3 className="font-bold text-lg text-gray-800">Minyak Telon</h3>
+              <p className="text-pink-500 font-bold mt-1">Rp 35.000</p>
+            </div>
+
+            {/* Produk 2 */}
+            <div className="border border-pink-100 rounded-2xl p-4 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-gray-100 h-48 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+                <img src="/produk/baju.jpg" alt="Produk 2" className="w-full h-full object-cover rounded-xl"/>
+              </div>
+              <h3 className="font-bold text-lg text-gray-800">Set Baju Newborn</h3>
+              <p className="text-pink-500 font-bold mt-1">Rp 85.000</p>
+            </div>
+
+            {/* Produk 3 */}
+            <div className="border border-pink-100 rounded-2xl p-4 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-gray-100 h-48 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+                <img src="/produk/popok.jpg" alt="Produk 3" className="w-full h-full object-cover rounded-xl"/>
+              </div>
+              <h3 className="font-bold text-lg text-gray-800">Popok Bayi</h3>
+              <p className="text-pink-500 font-bold mt-1">Rp 55.000</p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link href="/shop">
+              <a className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-pink-500 hover:bg-pink-600 md:py-4 md:text-lg md:px-10 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                Lihat Semua Produk 🛍️
+              </a>
+            </Link>
+          </div>
+
+        </div>
       </section>
 
       <section id="testimonials" className="py-20 px-6 bg-accent/30">
