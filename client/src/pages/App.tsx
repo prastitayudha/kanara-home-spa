@@ -8,9 +8,10 @@ import PriceList from "@/pages/PriceList";
 import Maintenance from "@/pages/Maintenance";
 import Member from "@/pages/Member";
 import Scanner from "@/pages/Scanner";
+import FloatingWA from "@/components/FloatingWA";
 
 // Saklar Rahasia (Environment Variable)
-const APP_MODE = import.meta.env.VITE_APP_MODE;
+const APP_MODE = import.meta.env.VITE_APP_MODE || "web";
 
 function Router() {
   // --- SKENARIO 1: JIKA MODENYA "SYSTEM" (KHUSUS MEMBER & ADMIN) ---
@@ -50,6 +51,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router />
       <Toaster />
+
+      {APP_MODE === "web" && <FloatingWA />}
     </QueryClientProvider>
   );
 }

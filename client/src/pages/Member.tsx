@@ -125,7 +125,7 @@ export default function Member() {
             />
           </div>
           <p className="text-center text-gray-500 text-sm mb-6">
-            Tunjukkan QR Code ini ke Terapis<br/>untuk menambah stampel.
+            Tunjukkan QR Code ini<br/>untuk menambah stampel.
           </p>
 
           {/* Stampel Grid */}
