@@ -8,7 +8,7 @@ import PriceList from "@/pages/PriceList";
 import Maintenance from "@/pages/Maintenance";
 import Member from "@/pages/Member";
 import Scanner from "@/pages/Scanner";
-import FloatingWA from "../components/FloatingWA";
+import FloatingWA from "./components/FloatingWA";
 
 // Saklar Rahasia (Environment Variable)
 const APP_MODE = import.meta.env.VITE_APP_MODE || "web";
