@@ -5,7 +5,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import PriceList from "@/pages/PriceList";
 import Maintenance from "@/pages/Maintenance";
-import Member from "@/pages/Member";
+import Member from "@/pages/Member"; 
 import Scanner from "@/pages/Scanner";
 import FloatingWA from "./components/FloatingWA";
 
