@@ -1,7 +1,6 @@
 import { Switch, Route, Redirect } from "wouter";
 import { QueryClient } from "@tanstack/react-query";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import PriceList from "@/pages/PriceList";
